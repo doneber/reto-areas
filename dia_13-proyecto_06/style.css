@@ -1,0 +1,68 @@
+p#text {
+  font-family: monospace;
+  font-size: 1.1em;
+  text-wrap: pretty;
+}
+
+.active {
+  text-underline-offset: 5px;
+  text-decoration: underline;
+}
+
+/* .wordWrong {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 5px;
+} */
+
+.letterCorrect {
+  color: rgb(0, 192, 0);
+}
+
+.letterWrong {
+  background: rgb(254, 171, 171);
+}
+.letterActive {
+  position: relative;
+}
+
+.lastLetterActive {
+  position: relative;
+  
+}
+
+.letterActive::after {
+  content: '';
+  position: absolute;
+  border-left: black 1px solid;
+  border-right: transparent 1px solid;
+  height: 1em;
+  width: .01px;
+  top: 0;
+  left: 0;
+}
+
+.lastLetterActive::after {
+  content: '';
+  position: absolute;
+  border-left: transparent 1px solid;
+  border-right: black 1px solid;
+  height: 1em;
+  width: .4em;
+  top: 0;
+  left: .15em;
+}
+
+.letterActive::after, .lastLetterActive::after {
+  animation: palpitation 1s infinite;
+}
+
+@keyframes palpitation {
+  0% {
+
+  }
+  50% {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }
+}

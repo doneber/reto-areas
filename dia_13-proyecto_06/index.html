@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+  </head>
+  <body class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><strong>Type Game</strong></li>
+        </ul>
+        <ul>
+          <li><a href="https://github.com/doneber/reto-areas/tree/main/dia_13-proyecto_06">GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="grid">
+        <button id="start">Empezar</button>
+        <!-- <h3>3</h3> -->
+      </div>
+      <hr>
+      <article>
+        <p id="text" style="min-height: 4rem;">
+          <!-- <span aria-busy="true">Generando...</span> -->
+          <i >Habla clic en "Empezar"</i>
+        </p>
+        <input id="input" autocomplete="off">
+      </article>
+      <div role="group">
+        <div>
+          <h6>Tu velocidad</h6>
+          <p id="speed">-</p>
+        </div>
+        <div>
+          <h6>Tiempo</h6>
+          <p id="time">-</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
