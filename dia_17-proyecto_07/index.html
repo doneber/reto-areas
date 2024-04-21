@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Terminal</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      main {
+        text-align: center;
+      }
+      #app {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>The Awesome Web Terminal</h1>
+      <p>The first terminal running in the web navigator</p>
+      <div id="app">
+        <form id="terminal">
+          <div class="history">
+            <div class="line">
+              Try to run "catsay"
+            </div>
+          </div>
+          <div class="input"></div>
+        </form>
+      </div>
+    </main>
+    <script src="CommandInterpreter.js"></script>
+    <script src="TerminalView.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
